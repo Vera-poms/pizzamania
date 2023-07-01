@@ -1,165 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts.googleapis.com/css?familySofia&effect=fire|neon|shadow">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg bg-warning fixed-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">PIZZAMANIA</a>
-    </div>
-    <div class="float-end">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>   
-
-            <li class="nav-item">
-                <a href="#aboutPizza" class="nav-link">AboutPizza</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="#pizzaTypes" class="nav-link">PizzaTypes</a>
-            </li>
-
-            </ul>
-            
-        </li>
-        
-    </div>
-</nav>
-    
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
-      class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
-      aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
-      aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/Users/admin/Documents/web dev/pizzamania/pizza/istockphoto-1298255689-612x612.jpg" class="d-block w-100" 
-        alt="Pepperoni" style="height: 600px;">
-      </div>
-      <div class="carousel-item">
-        <img src="/Users/admin/Documents/web dev/pizzamania/pizza/people-eating-takeout-pizza-885 (2).jpg" class="d-block w-100" 
-        alt="Vegetable" style="height: 600px; width: fit-content;">
-      </div>
-      <div class="carousel-item">
-        <img src="/Users/admin/Documents/web dev/pizzamania/pizza/360_F_463698797_QqwDBblKVCcPriiYm6iwG0TQpOQb1WO9.jpg" 
-        class="d-block w-100" alt="360" style="height: 600px;">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" 
-    data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" 
-    data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-<div class="text-center text-lg p-3" id="aboutPizza">
-    About Pizza 
-</div>
-
-<div class="container">
-    <div class="d-flex flex-row">
-        <div>
-            <img src="/Users/admin/Documents/web dev/pizzamania/pizza/Pizza-Toppings.jpg.webp" alt="pizzatoppings" 
-            style="height: 400px; width: 600px;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzamania</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-warning sticky-top">
+      <div class="container">
+        <div class="nav-brand justify-content-start">
+          <a
+            href="#"
+            class="nav-link disabled"
+            style="font-size: 25px; font-weight: bold"
+            >PIZZAMANIA</a
+          >
         </div>
-        <div class="px-4">
-            <h3>Pizza is awesome!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Velit et quis voluptatum temporibus itaque aut fugiat praesentium, 
-                assumenda odit repellendus, labore quaerat placeat dolorum quisquam? 
-                Et impedit reiciendis itaque natus eligendi quidem voluptatem explicabo 
-                ab facilis, esse fugit beatae vel iste voluptatum hic, mollitia doloremque 
-                totam cumque omnis dignissimos minus!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Velit et quis voluptatum temporibus itaque aut fugiat praesentium, 
-                assumenda odit repellendus, labore quaerat placeat dolorum quisquam? 
-                Et impedit reiciendis itaque natus eligendi quidem voluptatem explicabo 
-                ab facilis, esse fugit beatae vel iste voluptatum hic, mollitia doloremque 
-                totam cumque omnis dignissimos minus!
-                Et impedit reiciendis itaque natus eligendi quidem voluptatem explicabo 
-                ab facilis
-            </p>
+        <div class="justify-content-end">
+          <ul class="nav text-dark" style="font-size: 20px">
+            <li class="nav-item">
+              <a href="#home" class="nav-link disabled">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link disabled">AboutPizza</a>
+            </li>
+            <li class="nav-item">
+              <a href="#types" class="nav-link disabled">PizzaTypes</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/pizza/slide1.jpg"
+            class="d-block w-100"
+            style="height: 600px"
+            alt="guy eating"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/pizza/slide2.jpg"
+            class="d-block w-100"
+            style="height: 600px"
+            alt="people sharing"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/pizza/slide3.jpg"
+            class="d-block w-100"
+            style="height: 600px"
+            alt="group eating"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-</div>
-
-<div class="text-center text-lg p-3" id="pizzaTypes">
-    Pizza Types
-</div>
-
-<div class="container">
-    <div class="d-flex flex-row">
-        <div class="card p-2" style="width: 21rem;">
-            <img src="/Users/admin/Documents/web dev/pizzamania/pizza/Pepperoni-Pizza_5-SQjpg.jpg.webp" 
-            class="card-img-top" alt="pep">
-            <div class="card-body">
-            <h3>Pepperoni Pizza</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title 
-                and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-          <div class="card p-2" style="width: 21rem;">
-            <img src="/Users/admin/Documents/web dev/pizzamania/pizza/216054.jpg" 
-            class="card-img-top" alt="veg">
-            <div class="card-body">
-                <h3>Vegetable Pizza</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title 
-                and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-          <div class="card p-2" style="width: 20rem;">
-            <img src="/Users/admin/Documents/web dev/pizzamania/pizza/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" 
-            class="card-img-top" alt="cheeze" style="height: 258px;">
-            <div class="card-body">
-                <h3 class="pt-0">Cheese Pizza</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title 
-                and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-          <div class="card p-2" style="width: 22rem;">
-            <img src="/Users/admin/Documents/web dev/pizzamania/pizza/Goat-Cheese-Pizza-014.jpg" 
-            class="card-img-top" alt="cheeze" style="height: 256px;">
-            <div class="card-body">
-                <h3>Goat-Cheese Pizza</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title 
-                and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
+    <div
+      class="text-center text-dark p-3"
+      style="font-size: 30px; font-weight: bold"
+    >
+      About Pizza
     </div>
-</div>
+    <div class="container-fluid about">
+      <img
+        src="/pizza/pizzatypes.jpg.webp"
+        alt="different types of pizza"
+        class="img-fluid"
+      />
+      <div class="text">
+        <h3 id="awesome">Pizza is awesome!</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+          minima a expedita doloremque non temporibus eligendi accusantium
+          quibusdam porro possimus quisquam amet asperiores nesciunt aspernatur
+          omnis aperiam aliquid quod maiores sint totam, iusto, ullam magni,
+          dolorum alias. Libero eveniet optio voluptatibus et incidunt tempore
+          ad, culpa aliquid, nobis dicta molestias a. Iste, ea iusto? Quo
+          assumenda ipsam unde qui architecto. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Excepturi minima a expedita doloremque
+          non temporibus eligendi accusantium quibusdam porro possimus quisquam
+          amet asperiores nesciunt aspernatur omnis aperiam aliquid quod maiores
+          sint totam, iusto, ullam magni, dolorum alias. Libero eveniet optio
+          voluptatibus et incidunt tempore ad, culpa aliquid, nobis dicta
+          molestias a. Iste, ea iusto? Quo assumenda ipsam unde qui architecto.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+          minima a expedita doloremque non temporibus eligendi accusantium
+          quibusdam porro possimus quisquam amet asperiores nesciunt aspernatur
+          omnis aperiam aliquid quod maiores sint totam, iusto, ullam magni,
+          dolorum alias. Libero eveniet optio voluptatibus et incidunt tempore
+          ad, culpa aliquid, nobis dicta molestias a. Iste, ea iusto? Quo
+          assumenda ipsam unde qui architecto.
+        </p>
+      </div>
+    </div>
 
-<footer class="container footer bg-warning text-center p-2" style="height: 40px;">
-    © 2023 Pizzamania || All rights Reserved
-</footer>
+    <h2 class="text-dark text-center" style="font-weight: bold; padding: 20px">
+      Pizza Types
+    </h2>
 
-
-</body>
+    <div class="cards">
+      <div class="card w-100 p-2">
+        <img src="/pizza/pepperoni.jpg.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Pepperoni Pizza</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mt-2">
+        <img src="/pizza/cheese.jpg.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cheese Pizza</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mt-2">
+        <img
+          src="/pizza/Goat-Cheese-Pizza-014.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Goat-Cheese Pizza</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card w-100 p-2 mt-2">
+        <img src="/pizza/vegetable.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Vegetable Pizza</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-warning text-center">
+      ©2023 Pizzamania || All Rights Reserved.
+    </footer>
+  </body>
 </html>

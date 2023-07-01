@@ -1,12 +1,33 @@
-#about{
-    font-size: 30px;
-    font-weight: bold;
-}
-#aboutPizza{
-    font-size: 30px;
-    font-weight: bold; 
-}
-#pizzaTypes{
-    font-size: 30px;
-    font-weight: bold; 
+@media screen and (min-width: 992px) {
+  .about {
+    display: flex;
+    float: left;
+  }
+  .img-fluid {
+    padding-left: 80px;
+    width: 550px;
+  }
+  .text {
+    padding-left: 30px;
+    padding-right: 150px;
+    width: max-content;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    margin: 10px;
+    height: auto;
+  }
+  .card img {
+    height: 50%;
+  }
+  .card .card-title {
+    font-weight: 700;
+  }
+  footer {
+    margin-top: 15px;
+    padding: 10px;
+  }
 }
